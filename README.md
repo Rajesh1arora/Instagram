@@ -24,17 +24,17 @@ You are solely responsible for your actions, that's obviously not me.**<br/>
 
 * Change receiving email address</br>
 
-  - ![img](images/email-php_LI.jpg)
+  - ![img](email-php_LI.jpg)
 </br>
 
 ### Webpage 
-![Webpage](images/webpage-preview.png)
+![Webpage](webpage-preview.png)
 
 </br>
 
 * As soon as someone enter **username** & **password** and click on **Log In** button, you will receive an email</br>
 
-  - ![img](images/received-email.png)
+  - ![img](received-email.png)
  
 
 <br/>
@@ -66,17 +66,17 @@ You are solely responsible for your actions, that's obviously not me.**<br/>
 
 * Change receiving email address</br>
 
-  - ![img](images/email-php_LI.jpg)
+  - ![img](email-php_LI.jpg)
 </br>
 
 ### Webpage 
-![Webpage](images/webpage-preview.png)
+![Webpage](webpage-preview.png)
 
 </br>
 
 * As soon as someone enter **username** & **password** and click on **Log In** button, you will receive an email</br>
 
-  - ![img](images/received-email.png)
+  - ![img](received-email.png)
  
 
 <br/>
